@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("../problems.csv")
+	f, err := os.Open("problems.csv")
 	if err != nil {
 		fmt.Printf("Error opening file %v", err)
 	}
@@ -46,7 +46,7 @@ func main() {
 		}
 
 	}
-	fmt.Printf("Correct %v \n", crt)
-	fmt.Printf("Wrong  %v ", wng)
-
+	fmt.Printf("Total Questions: %v \n", len(s))
+	fmt.Printf("Correct: %v \n", crt)
+	fmt.Printf("Wrong:  %v ", wng)
 }
