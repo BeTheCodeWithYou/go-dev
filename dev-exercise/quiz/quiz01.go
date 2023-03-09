@@ -5,7 +5,6 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"strconv"
 )
 
 func main() {
@@ -24,21 +23,18 @@ func main() {
 	if err != nil {
 		fmt.Printf("error reading file data %v", err)
 	}
-	var ua, crt, wrng int
+	var crt, wrng int
+	var ua string
 	for _, q := range s {
 		fmt.Printf("What is %v ? ", q[0])
 		fmt.Scanln(&ua)
 		if err != nil {
 			fmt.Printf("Invalid input %v", err)
 		}
-		a, err := strconv.Atoi(q[1])
-		if err != nil {
-			fmt.Println("Error converting string to int ", err)
-		}
-		if ua == a {
-			crt++
-		} else {
+		if ua == "" || ua != q[1]{
 			wrng++
+		} else {
+			crt++
 		}
 
 	}
