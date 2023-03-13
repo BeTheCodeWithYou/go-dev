@@ -13,5 +13,4 @@ func TestFilterEven(t *testing.T) {
 			t.Errorf("even number filtering failed for %v input ", input)
 		}
 	}
-
 }

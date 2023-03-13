@@ -20,6 +20,6 @@ func main() {
 	// fmt.Println(string(bs))
 
 	// OR as below
-
+	defer res.Body.Close()
 	io.Copy(os.Stdout, res.Body)
 }

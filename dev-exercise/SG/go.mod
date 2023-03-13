@@ -1,3 +1,3 @@
-module dev-exercise.com/m
+module dev-exercise/SG
 
 go 1.20
