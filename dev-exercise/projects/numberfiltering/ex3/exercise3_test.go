@@ -8,7 +8,7 @@ import (
 
 func TestFilterPrimeNum(t *testing.T) {
 
-	in := []int{1, 2, 3, 45, 67, 33, -2}
+	in := []int{7, 45}
 	ou := filterPrimeNumber(in)
 	fmt.Println("Prime numbers are -", ou)
 

@@ -4,11 +4,10 @@ import "fmt"
 
 func main() {
 
-	in := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 45}
+	in := []int{1,2,3,4,5,6,7,19,23,45,87,88}
 
 	in = filterPrimeNumber(in)
 	fmt.Println(in)
-
 }
 
 func filterPrimeNumber(in []int) []int {
@@ -20,7 +19,7 @@ func filterPrimeNumber(in []int) []int {
 		ct = 0
 		if v > 1 {
 			for _, tv := range ts {
-				if tv>1 && v%tv == 0 {
+				if tv > 1 && v%tv == 0 {
 					ct++
 				}
 			}
