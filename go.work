@@ -4,5 +4,6 @@ use (
 	./deck-of-cards
 	./dev-exercise/SG
 	./dev-exercise/projects
-	./pocket-projects
+	./pocket-projects/hello-vibrating-stars
+	./pocket-projects/pocketlog
 )
