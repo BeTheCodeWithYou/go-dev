@@ -1,9 +1,11 @@
 go 1.20
 
 use (
+	./cards
 	./deck-of-cards
 	./dev-exercise/SG
 	./dev-exercise/projects
 	./pocket-projects/hello-vibrating-stars
 	./pocket-projects/pocketlog
+	./pocket-projects/bookworms
 )
