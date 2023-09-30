@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./codewars
 	./cards
 	./deck-of-cards
 	./dev-exercise/SG
